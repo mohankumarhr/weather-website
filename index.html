@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="navlist">
+        <a class="name">
+            <span class="name">WEATHER APP</span>
+        </a>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <div class="search">
+            <form action="#">
+                <input type="text" id="city" placeholder=" Search City" name="search">
+                <button style="font-size: 18px;" type="submit" id="submit">
+                    search
+                </button>
+            </form>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="head">
+        <h1>WEATHER OF <span id="cityName"></span></h1>
+    </div>
+
+    <div class="container1">
+
+        <div class="box1">
+            <div class="box3">
+                <h3>TEMPERATURE</h3>
+            </div>
+            <div class="box4">
+                <span id="temp"></span>&#8451;
+            </div>
+        </div>
+        <div class="box2">
+        <div class="box5 cbox"><div class="cima"><img src="/humidity.png"><b class="headname">Humidity</b><br><span class="subname" id="humidity"></span>%</div></div>
+        <div class="box6 cbox"><div class="cima"><img src="./wind.png"><b class="headname">Windspeed</b><br><span class="subname" id="wind_speed"></span>m/s</div></div>
+        <div class="box7 cbox"><div class="cima"><img src="./termp.png"><b class="headname">MaxTemp</b><br><span class="subname" id="max_temp"></span>&#8451;</div></div>
+        <div class="box8 cbox"><div class="cima"><img src="./mintemp.png"><b class="headname">MinTemp</b><br><span class="subname" id="min_temp"></span>&#8451;</div></div>
+        <div class="box9 cbox"><div class="cima"><img src="./winddegree.png"><b class="headname">Winddegree</b><br><span class="subname" id="wind_degrees"></span></div></div>
+        <div class="box10 cbox"><div class="cima"><img src="./termp.png"><b class="headname">Feelslike</b><br><span class="subname" id="feels_like"></span>&#8451;</div></div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
